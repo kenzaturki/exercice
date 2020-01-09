@@ -1,0 +1,20 @@
+<p>component-rxjs works!</p>
+
+<p>{{valeur1}}</p>
+
+<button (click)="valeur1=10">Click me!</button>
+
+<p> Version : {{data?.info.version}} </p>
+
+<p> Email : {{data?.results[0].email}} </p>
+
+<p> Street : {{data?.results[0].location.street.name}} </p>
+
+<div *ngFor="let result of data?.results ; let i=index">
+  <p>
+    Gender{{i}}
+  </p>
+  <p>
+    Email{{i}} : {{result.email}}
+  </p>
+</div>

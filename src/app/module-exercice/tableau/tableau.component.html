@@ -1,0 +1,16 @@
+
+<table style="width: 100%">
+  <thead>
+  <th *ngFor="let column of columns ">
+    {{column}}
+  </th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let result of data?.results">
+    <td [ngStyle]="{color: result.dob.age > 40 ? 'green' : 'red'}">{{result.name.first}}</td>
+    <td [ngStyle]="{color: result.dob.age > 40 ? 'green' : 'red'}">{{result.name.last}}</td>
+    <td [ngStyle]="{color: result.dob.age > 40 ? 'green' : 'red'}">{{result.gender}}</td>
+    <td [ngStyle]="{color: result.dob.age > 40 ? 'green' : 'red'}">{{result.email}}</td>
+    <td [ngStyle]="{color: result.dob.age > 40 ? 'green' : 'red'}">{{result.dob.age}}</td>
+  </tr>
+</table>

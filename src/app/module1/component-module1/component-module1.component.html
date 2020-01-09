@@ -1,0 +1,15 @@
+<p>component-module1 works!</p>
+
+<button (click)="onClick()">Click me!</button>
+
+<p *ngIf="affichage">salut</p>
+<p *ngFor="let item of array">{{item}}</p>
+
+<div [ngClass]="{'alert alert-success': afficherCouleur, 'alert alert-danger': !afficherCouleur}">ALERT</div>
+
+<div class="alert alert-success" role ="alert">Success</div>
+<div class="alert alert-danger" role ="alert">Danger</div>
+
+<p>Salut {{nom | uppercase | slice:2}} !! </p>
+<p>Date : {{date | date:'MM/yyyy'}} </p>
+<p>People : {{people | json}}</p>
